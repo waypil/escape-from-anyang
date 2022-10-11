@@ -1,11 +1,17 @@
-// 여기에 코드를 작성해주세요
-let container = document.querySelector('#container');
-let button = document.querySelector('button');
-let span = document.querySelector('span');
-
-let idx = 0;
-
-button.addEventListener('click', function () {
-   idx += 1;
-   span.innerHTML = idx;
-});
+function count(type)  {
+  // 결과를 표시할 element
+  const resultElement = document.getElementById('result');
+  
+  // 현재 화면에 표시된 값
+  let number = resultElement.innerText;
+  
+  // 더하기/빼기
+  if(type === 'plus') {
+    number = parseInt(number) + 1;
+  }else if(type === 'minus')  {
+    number = parseInt(number) - 1;
+  }
+  
+  // 결과 출력
+  resultElement.innerText = number;
+}

@@ -24,15 +24,13 @@
 </head>
 
 <body>
-  <h2 id="title">클릭 이벤트를 붙여보자</h2>
-  <article id="mission">
-    <p>JS를 이용해서 숫자증가버튼을 클릭했을때 span의 숫자가 1씩 올라가게 해주세요.</p>
-  </article>
-
-  <div id="container">
-    <button>숫자증가</button>
-    <span>0</span>
-  </div>
+<input type='button'
+       onclick='count("plus")'
+       value='+'/>
+<input type='button'
+       onclick='count("minus")'
+       value='-'/>
+<div id='result'>0</div>
 </body>
 
 </html>
